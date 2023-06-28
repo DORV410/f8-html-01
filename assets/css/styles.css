@@ -1,0 +1,475 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#0F1B4C;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins",sans-serif;
+}
+
+/* ==============COMMON============== */
+.content{
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    min-width: 98px;
+    background: var(--primary-color);
+    border-radius: 12px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 18px 16px;
+    text-align: center;
+}
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp,2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ==============HEADER============== */
+.header{
+    background: #E6F0FF;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+.navbar ul {
+    display: flex;
+    margin-left: 50px;
+}
+.navbar ul a{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4F5361;
+    padding:8px 14px;
+}
+.navbar .actions{
+    margin-left: auto;
+}
+
+.navbar .actions-link{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.navbar .action-btn{
+    padding: 13px 16px;
+    margin-left: 18px;
+    border-radius: 8px;
+}
+
+/* ==============HERO============== */
+.hero{
+    margin-top: 130px;
+}
+.hero .info{
+    width: 50%;
+}
+.hero .sub-title{
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: 0.01em;
+    color: #687690;
+}
+
+.hero .title{
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 1.19;
+    color: #000336;
+    margin-top: 8px;
+}
+.hero .desc{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #5A6473;
+    margin-top: 30px;
+}
+
+.hero-cta{
+    margin-top: 40px;
+    min-width: 170px;
+}
+
+.hero-img{
+    position: absolute;
+    right:calc((100vw - 1110px) / 2 - 65px);
+    bottom: 0;
+}
+
+/* ==============CLIENT============= */
+.client{
+    margin-top: 79px;
+    padding: 43px 0 41px;
+}
+.client .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.client .row-desc{
+    margin-top: 23px;
+    color: #7D8589;
+}
+.client .images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 96px;
+}
+
+/* ==============GUIDES============== */
+.guides{
+    margin-top: 40px;
+    padding: 79px 0;
+}
+.guides .sub-title::before{
+    display: inline-block;
+    position: absolute;
+    width: 41px;
+    height: 4px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000339;
+    border-radius: 12px;
+    content: "";
+}
+.guides .sub-title{
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    color: #000339;
+}
+
+.guides .desc{
+    width: 459px;
+    max-width: 100%;
+    color: #5A6473;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    font-weight: 400;
+    margin:20px auto 0;
+}
+
+.list-guide{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.guide-items{
+    margin: 0 70px;
+    text-align: center;
+}
+.guide-items .title{
+    color: #3B3C45;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 26px;
+}
+/* thẻ a có thuộc tính mặc định display:inline */
+.guide-items .link{
+    display: inline-block;
+    margin-top: 10px;
+    color: #0689FF;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.guide-items .arrow {
+    margin-left: 8px;
+}
+
+.guide-cta{
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+.guide-cta .btn{
+    min-width: 170px;
+}
+
+/* ==============FEATURE============== */
+.feature{
+    background: #F5FAFE;
+    margin-top: 120px;
+    padding:110px 0;
+}
+
+.feature .sub-title{
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 35px;
+}
+.feature .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.feature .desc{
+    color: #5A6473;
+    line-height: 30px;
+}
+.feature .link{
+    color: #0689FF;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.feature .arrow{
+    position: relative;
+    top: -2px;
+    right: -8px;
+}
+.feature .list{
+    margin-top: 70px;
+    display: flex;
+    gap: 30px;
+}
+.list .items{
+    flex: 1;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.list .items .thumbs{
+    width: 100%;
+    height: 227px;
+    object-fit:cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.list .items .body{
+    padding: 17px 20px 24px;
+}
+
+.list .items .title a{
+    color: #000339;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    word-break: break-all;
+}
+.list .items .desc{
+    margin-top: 11px;
+    color: #A3A6AB;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.list .items .info{
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+}
+.list .items .icon{
+    margin-left: 22.7px;
+}
+.list .items .icon:first-child{
+    margin-left: 0;
+}
+.list .items .label{
+    color: #4D4D52;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    margin-left: 8px;
+}
+/* ===============STATS================ */
+.stats{
+    padding: 50px 0;
+    margin-top: 75px;
+}
+.stats .content{
+    width: 1048px;
+}
+.stats .row{
+    display: flex;
+}
+.stats .img-block{
+    position: relative;
+}
+.stats .img-block,
+.stats .info{
+    width:50%;
+}
+.stats .img-block .img{
+    display: block;
+    width: 400px;
+    height: 460px;
+    object-fit: cover;
+    border-radius:12px;
+    margin-left: auto;
+}
+
+.stats .info{
+    padding: 79px 0 0 165px;
+    /* lúc đầu để margin 165px làm ảnh hưởng đến margin auto của .img-block */
+}
+
+.stats .sub-title{
+    width: 269px;
+    height: 142px;
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.29;
+    position: relative;
+}
+.stats .sub-title::before{
+    content:"";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+.stats .info .desc{
+    margin-top: 20px;
+    width: 309px;
+    font-weight: 400;
+    color: #5A6473;
+    font-size: 1.6rem;
+    line-height: 1.875;
+}
+.stats-trend{
+    position: absolute;
+    width: 239px;
+    border-radius: 0px 0px 12px 12px;
+    background: #FFF;
+    box-shadow: 90px 85px 100px 0px rgba(0, 0, 0, 0.06);
+    padding: 45px 23px 41px;
+}
+
+.stats-trend .value{
+    color: #000339;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+.stats-trend .arrow-trend-up{
+    margin-left: auto;
+}
+.stats-trend .desc{
+    color: #A7A7A7;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 8px;
+}
+.stats-trend .separate{
+    background: #E9E9E9;
+    height: 1.2px;
+    margin-top: 25px;
+}
+.stats .avatar-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 14px;
+    margin-top: 26px;
+}
+.stats .avatar-group{
+    display: flex;
+}
+.stats .avatar{
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin-left: -3px;
+    object-fit: cover;
+    background: var(--bg-color, #fff);
+    font-weight: 450;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+.stats .avatar:first-child{
+    margin-left: 0;
+}
+.stats .row-qty{
+    justify-content: space-between;
+    margin-top: 110px;
+    padding:0 32px;
+}
+.stats .qty{
+    color: #000;
+    font-size: 6.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+.stats .qty-desc{
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #7B8087;
+}
+/* <!-- ============= Subscribe ================ --> */
+.subscribe{
+    margin-top: 50px;
+    padding:51px 0;
+}
+.subscribe .body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 370px;
+    background: #063183;
+    border-radius: 20px;
+}
+.subscribe .info{
+    width: 671px;
+    padding: 0 80px;
+}
+.subscribe .sub-title{
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: #FFF;
+}
+.subscribe .desc{
+    color: #FFF;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    margin-top: 15px;
+    opacity: 0.75;
+}
+.subscribe .btn{
+    background-color: #fff;
+    color: #002366;
+    min-width: 151px;
+    margin-top: 20px;
+}
+.subscribe .image{
+    position: absolute;
+    bottom: 0;
+    right: 221px;
+}
