@@ -41,28 +41,22 @@ a{
 }
 .icon-face{
     background-image: url("/assets/img/social-icon.svg");
-    background-position: -5px -5px;
-    background-origin: content-box;
-    background-repeat: no-repeat;
+    background-position: 1px -1px;
     display: inline-block;
     width: 18px;
     height: 18px;
 }
 .icon-instagram{
     background-image: url("/assets/img/social-icon.svg");
-    background-position: -93px -5px;
+    background-position: -89px -1px;
     background-origin: content-box;
-    background-repeat: no-repeat;
-    display: inline-block;
     width: 18px;
     height: 18px;
 }
 .icon-twitter{
     background-image: url("/assets/img/social-icon.svg");
-    background-position: -50px -5px;
+    background-position: -44px -1px;
     background-origin: content-box;
-    background-repeat: no-repeat;
-    display: inline-block;
     width: 18px;
     height: 18px;
 }
@@ -560,6 +554,9 @@ a{
     width: 28px;
     height: 28px;
     border-radius: 3px;
+}
+.footer .social-link+.social-link{
+    margin-left: 16px;
 }
 
 .footer .row-bottom{
