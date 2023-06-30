@@ -4,8 +4,7 @@
 :root{
     --primary-color:#0F1B4C;
 }
-html,
-body{
+html,body{
     scroll-behavior: smooth;
 }
 html{
