@@ -4,6 +4,10 @@
 :root{
     --primary-color:#0F1B4C;
 }
+html,
+body{
+    scroll-behavior: smooth;
+}
 html{
     font-size: 62.5%;
 }
@@ -102,29 +106,31 @@ a{
 
 /* ==============HERO============== */
 .hero-wrap{
-    padding-top: 138px;
     background: #E6F0FF;
-    height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.hero .info{
+.hero-wrap .info{
     width: 50%;
 }
-.hero .sub-title{
+.hero-wrap .sub-title{
     font-weight: 500;
     font-size: 1.8rem;
     letter-spacing: 0.01em;
     color: #687690;
 }
 
-.hero .title{
+.hero-wrap .title{
     font-weight: 700;
     font-size: 6.4rem;
     line-height: 1.19;
     color: #000336;
     margin-top: 8px;
 }
-.hero .desc{
+.hero-wrap .desc{
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.78;
